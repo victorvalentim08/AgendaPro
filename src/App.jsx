@@ -1,0 +1,8 @@
+function App() {
+  return (
+    <div>
+      <h1>Sistema de Agendamento</h1>
+    </div>
+  )
+}
+export default App
