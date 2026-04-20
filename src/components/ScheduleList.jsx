@@ -1,10 +1,11 @@
 import './ScheduleList.css';
 import { TimeSlot } from './TimeSlot';
 
-export function ScheduleList({ slots = [], onSlotSelect }) {
-  const handleSlotSelect = (slotId) => {
-    if (onSlotSelect) {
-      onSlotSelect(slotId);
+export function ScheduleList({ slots = [], onSelectSlot }) {
+  
+  const handleSlotSelect = (slot) => {
+    if (onSelectSlot) {
+      onSelectSlot(slot);
     }
   };
 
@@ -16,7 +17,7 @@ export function ScheduleList({ slots = [], onSlotSelect }) {
             key={slot.id}
             time={slot.time}
             isAvailable={slot.is_available}
-            onSelect={() => handleSlotSelect(slot.id)}
+            onSelect={() => handleSlotSelect(slot)}
           />
         ))}
       </div>
