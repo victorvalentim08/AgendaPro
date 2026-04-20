@@ -1,0 +1,45 @@
+/* Container principal do painel */
+.admin-panel-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.admin-panel-title {
+  margin-top: 0;
+  color: #333;
+}
+
+.admin-panel-subtitle {
+  color: #555;
+  font-size: 14px;
+}
+
+.admin-panel-form {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-panel-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.admin-panel-button {
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.admin-panel-button:hover {
+  background-color: #1565c0;
+}
